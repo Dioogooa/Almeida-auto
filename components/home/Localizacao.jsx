@@ -17,9 +17,9 @@ export default function Localizacao() {
                 <h3 className="text-xl font-bold text-gray-900">Endereço</h3>
               </div>
               <p className="text-gray-600 pl-9">
-                Rua Placeholder das Flores, 123<br />
-                Bairro Automotivo<br />
-                Cidade - Estado, 00000-000
+                Av. Quarta Radial, 1300<br />
+                St. Pedro Ludovico<br />
+                Goiânia, GO - 74830-130
               </p>
             </div>
 
@@ -29,21 +29,21 @@ export default function Localizacao() {
                 <h3 className="text-xl font-bold text-gray-900">Horário de Funcionamento</h3>
               </div>
               <ul className="text-gray-600 pl-9 space-y-2">
-                <li><span className="font-medium text-gray-900">Seg - Sex:</span> 9h às 18h</li>
-                <li><span className="font-medium text-gray-900">Sábado:</span> 9h às 13h</li>
+                <li><span className="font-medium text-gray-900">Seg - Sex:</span> 8h às 18h</li>
+                <li><span className="font-medium text-gray-900">Sábado:</span> 8h às 13h</li>
                 <li><span className="font-medium text-gray-900">Domingo:</span> Fechado</li>
               </ul>
             </div>
           </div>
 
           <div className="col-span-1 lg:col-span-2 h-[400px] bg-gray-200 rounded-3xl overflow-hidden relative">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14620.316086782488!2d-46.6669926875704!3d-23.63731872134062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a00a297e68b%3A0xb3de4ce992e59e54!2sAeroporto%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1714578502390!5m2!1spt-BR!2sbr" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen="" 
-              loading="lazy" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.089391023179!2d-49.260581699999996!3d-16.722391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef1208a6f4ad5%3A0x89efb53f5d31dd78!2sAlmeida%20Auto%20Est%C3%A9tica%20Automotiva%20%7C%20Central%20Mult%C3%ADmidia%20%7C%20Insulfilm%20%7C%20Som%20Automotivo%20em%20Goiania!5e0!3m2!1spt-BR!2sbr!4v1775232559103!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
