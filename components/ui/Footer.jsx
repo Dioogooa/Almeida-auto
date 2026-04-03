@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
@@ -7,10 +8,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         <div className="col-span-1 md:col-span-2">
           <Link href="/" className="flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center text-white font-bold text-xs">
-              AA
-            </div>
-            <span className="font-bold text-xl tracking-tight text-white">Almeida Auto</span>
+            <Image
+              src="/Logo1.png"
+              alt="Almeida Auto"
+              width={160}
+              height={32}
+              className="h-8 w-auto object-contain"
+            />
           </Link>
           <p className="text-gray-400 max-w-sm">
             Especialistas em transformar o seu veículo com tecnologia, estilo e o melhor cuidado estético.

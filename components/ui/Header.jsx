@@ -1,15 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-muted">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          {/* Logo */}
-          <div className="w-10 h-10 bg-primary/20 rounded-md flex items-center justify-center text-primary font-bold">
-            AA
-          </div>
-          <span className="font-bold text-xl tracking-tight text-primary">Almeida Auto</span>
+          <Image 
+            src="/logo.png" 
+            alt="Almeida Auto" 
+            width={200} 
+            height={40} 
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
         
         <nav className="hidden md:flex items-center gap-8 font-medium">
