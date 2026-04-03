@@ -1,3 +1,5 @@
+import { FaWhatsapp } from "react-icons/fa";
+
 export default function CtaWhatsApp() {
   return (
     <section className="bg-primary py-20 relative overflow-hidden">
@@ -11,11 +13,12 @@ export default function CtaWhatsApp() {
           Faça um orçamento sem compromisso e descubra as melhores opções de mídia e estética para o seu veículo.
         </p>
         <a
-          href="https://wa.me/55SEUNUMERO?text=Olá! Quero fazer um orçamento sem compromisso"
+          href="https://wa.me/5562982302156?text=Ol%C3%A1%2C%20quero%20fazer%20um%20orcamento%20sem%20compromisso"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-black font-bold py-4 px-10 rounded-full hover:bg-gray-100 hover:scale-105 transition-all shadow-lg"
+          className="inline-flex items-center justify-center gap-2 bg-white text-black font-bold py-4 px-10 rounded-full hover:bg-gray-100 hover:scale-105 transition-all shadow-lg"
         >
+          <FaWhatsapp className="w-6 h-6 text-[#25D366]" />
           Chamar no WhatsApp
         </a>
       </div>
