@@ -17,7 +17,7 @@ export default function Footer() {
             />
           </Link>
           <p className="text-gray-400 max-w-sm">
-            Especialistas em transformar o seu veículo com tecnologia, estilo e o melhor cuidado estético.
+            Especialistas em transformar o seu veículo com o cuidado e tecnologia que ele merece.
           </p>
         </div>
 
@@ -26,17 +26,6 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400">
             <li><Link href="/servicos" className="hover:text-primary transition-colors">Nossos Serviços</Link></li>
             <li><Link href="#contato" className="hover:text-primary transition-colors">Contato</Link></li>
-            <li>
-              <a
-                href="https://wa.me/55SEUNUMERO?text=Olá! Quero transformar meu carro"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors flex items-center gap-2"
-              >
-                <FaWhatsapp className="w-5 h-5" />
-                Chamar no WhatsApp
-              </a>
-            </li>
           </ul>
         </div>
 
@@ -45,18 +34,18 @@ export default function Footer() {
           <ul className="space-y-4 text-gray-400">
             <li>
               <a
-                href="https://instagram.com/SEUINSTA"
+                href="https://instagram.com/almeida_autoo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors flex items-center gap-2"
               >
                 <FaInstagram className="w-5 h-5" />
-                @loja
+                Instagram
               </a>
             </li>
             <li>
               <a
-                href="https://wa.me/55SEUNUMERO?text=Olá! Quero transformar meu carro"
+                href="https://wa.me/5562982302156"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition-colors flex items-center gap-2"
