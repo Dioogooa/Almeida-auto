@@ -12,18 +12,21 @@ const servicos = [
     titulo: "Multimídia Automotiva",
     descricao: "Instalação de centrais multimídia de última geração, integração com Apple CarPlay e Android Auto, câmeras de ré e sistemas de som premium.",
     imagem: "/servicos/multimidia.jpg",
+    video: "/servicos/multimidia.mp4",
   },
   {
     id: "acessorios",
     titulo: "Acessórios e Películas",
-    descricao: "Aplicação de insulfilm, películas antivandalismo, frisos laterais, alarmes e outros acessórios para segurança e personalização.",
+    descricao: "Aplicação de insulfilm, fitas de led, sistema de som, alarmes e outros acessórios para segurança e personalização.",
     imagem: "/servicos/acessorios.jpg",
+    video: "/servicos/acessorios.mp4",
   },
   {
     id: "estetica",
     titulo: "Estética Automotiva",
     descricao: "Polimento técnico, cristalização, vitrificação de pintura e higienização interna completa para manter seu carro como zero.",
     imagem: "/servicos/estetica.jpg",
+    video: "/servicos/estetica1.mp4",
   }
 ];
 
@@ -48,11 +51,10 @@ export default function SecaoInterativa() {
               <button
                 key={servico.id}
                 onClick={() => setAtivo(servico)}
-                className={`text-left p-6 rounded-2xl border transition-all duration-300 ${
-                  ativo.id === servico.id
-                    ? "border-primary bg-primary/5 shadow-md"
-                    : "border-gray-200 bg-white hover:border-primary/30"
-                }`}
+                className={`text-left p-6 rounded-2xl border transition-all duration-300 ${ativo.id === servico.id
+                  ? "border-primary bg-primary/5 shadow-md"
+                  : "border-gray-200 bg-white hover:border-primary/30"
+                  }`}
               >
                 <h3 className={`text-2xl font-bold mb-2 ${ativo.id === servico.id ? "text-primary" : "text-gray-800"}`}>
                   {servico.titulo}
@@ -60,10 +62,9 @@ export default function SecaoInterativa() {
                 <p className="text-gray-600 mb-4 line-clamp-3">
                   {servico.descricao}
                 </p>
-                <div 
-                  className={`inline-flex items-center gap-1 font-semibold transition-colors ${
-                    ativo.id === servico.id ? "text-primary" : "text-gray-400"
-                  }`}
+                <div
+                  className={`inline-flex items-center gap-1 font-semibold transition-colors ${ativo.id === servico.id ? "text-primary" : "text-gray-400"
+                    }`}
                 >
                   Saber mais <ChevronRight size={18} />
                 </div>
@@ -90,9 +91,24 @@ export default function SecaoInterativa() {
                 transition={{ duration: 0.5 }}
                 className="absolute inset-0"
               >
-                <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
-                  <span className="text-gray-400 font-medium">[Imagem: {ativo.imagem}]</span>
-                </div>
+                {ativo.video ? (
+                  <video
+                    src={ativo.video}
+                    poster={ativo.imagem}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                ) : (
+                  <Image
+                    src={ativo.imagem}
+                    alt={ativo.titulo}
+                    fill
+                    className="object-cover"
+                  />
+                )}
               </motion.div>
             </AnimatePresence>
           </div>
