@@ -19,7 +19,7 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-8 font-medium">
           <Link href="/" className="hover:text-primary transition-colors text-foreground">Home</Link>
           <Link href="/servicos" className="hover:text-primary transition-colors text-foreground">Serviços</Link>
-          <Link href="#contato" className="hover:text-primary transition-colors text-foreground">Contato</Link>
+          <Link href="/contatos" className="hover:text-primary transition-colors text-foreground">Contatos</Link>
         </nav>
 
         {/* Menu mobile */}

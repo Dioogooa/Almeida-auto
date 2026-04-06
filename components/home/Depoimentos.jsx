@@ -4,7 +4,7 @@ export default function Depoimentos() {
   const depoimentos = [
     {
       nome: "Carlos Eduardo",
-      carro: "Jeep Compass",
+      carro: "Mercedes c180",
       texto: "Instalei a central multimídia com eles e ficou perfeito. Acabamento impecável e o atendimento foi nota 10. Recomendo muito!",
       foto: "/depoimentos/carlos.jpg"
     },
