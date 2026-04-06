@@ -5,7 +5,7 @@ export default function ProvaSocial() {
       description: "clientes atendidos",
     },
     {
-      title: "+4 anos",
+      title: "+5 anos",
       description: "de mercado",
     },
     {
@@ -17,6 +17,14 @@ export default function ProvaSocial() {
   return (
     <section className="py-16 bg-muted">
       <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Sejam bem-vindos à Almeida Auto
+          </h1>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Transformando a experiência do seu veículo com a melhor tecnologia em multimídia e acessórios automotivos.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, i) => (
             <div
