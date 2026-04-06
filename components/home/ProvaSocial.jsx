@@ -1,3 +1,5 @@
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+
 export default function ProvaSocial() {
   const stats = [
     {
@@ -17,6 +19,29 @@ export default function ProvaSocial() {
   return (
     <section className="py-16 bg-muted">
       <div className="max-w-7xl mx-auto px-4">
+
+        {/* Botões de Acesso Rápido */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <a
+            href="https://wa.me/5562982302156"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold rounded-full transition-all hover:scale-105 shadow-lg active:scale-95 text-lg"
+          >
+            <FaWhatsapp className="w-6 h-6" />
+            Nosso WhatsApp
+          </a>
+          <a
+            href="https://instagram.com/almeida_autoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] hover:opacity-90 text-white font-bold rounded-full transition-all hover:scale-105 shadow-lg active:scale-95 text-lg"
+          >
+            <FaInstagram className="w-6 h-6" />
+            Nosso Instagram
+          </a>
+        </div>
+
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Sejam bem-vindos à Almeida Auto
