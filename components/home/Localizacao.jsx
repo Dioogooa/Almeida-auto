@@ -51,12 +51,14 @@ export default function Localizacao() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <Link 
-            href="/contatos" 
+          <a
+            href="https://wa.me/5562982302156?text=Ol%C3%A1%2C%20quero%20fazer%20um%20orcamento%20sem%20compromisso"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 active:scale-95"
           >
             Fazer Orçamento <MessageCircle className="w-5 h-5" />
-          </Link>
+          </a>
         </div>
       </div>
     </section>

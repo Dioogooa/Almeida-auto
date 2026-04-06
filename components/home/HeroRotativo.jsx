@@ -91,7 +91,7 @@ export default function HeroRotativo() {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <a
-              href="https://wa.me/55SEUNUMERO?text=Olá! Quero transformar meu carro"
+              href="https://wa.me/5562982302156?text=Ol%C3%A1%2C%20quero%20fazer%20um%20orcamento%20sem%20compromisso"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 active:scale-95"
