@@ -8,8 +8,8 @@ import { MessageCircle } from "lucide-react";
 const slides = [
   {
     id: 1,
-    title: "Bem vindo à Almeida Auto",
-    subtitle: "Experts em Multimídia Automotiva",
+    title: "Multímidia",
+    subtitle: "Transforme a interna do seu carro!",
     bgImage: "/hero/Slide1.webp",
   },
   {
