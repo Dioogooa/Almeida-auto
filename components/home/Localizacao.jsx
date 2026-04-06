@@ -1,4 +1,5 @@
-import { MapPin, Clock } from "lucide-react";
+import Link from "next/link";
+import { MapPin, Clock, MessageCircle } from "lucide-react";
 
 export default function Localizacao() {
   return (
@@ -47,6 +48,15 @@ export default function Localizacao() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+        </div>
+
+        <div className="mt-16 flex justify-center">
+          <Link 
+            href="/contatos" 
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 active:scale-95"
+          >
+            Fazer Orçamento <MessageCircle className="w-5 h-5" />
+          </Link>
         </div>
       </div>
     </section>
