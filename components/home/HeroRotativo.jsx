@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
 const slides = [
@@ -14,16 +13,16 @@ const slides = [
   },
   {
     id: 2,
-    title: "Multimídia Automotiva Especializada",
-    subtitle: "Conectividade, segurança e entretenimento na ponta dos dedos.",
-    bgImage: "/hero/Slide2.webp",
+    title: "Acessórios",
+    subtitle: "O detalhe que faltava no seu carro!",
+    bgImage: "/hero/Slide1.webp",
   },
-  // {
-  //   id: 3,
-  //   title: "Estética e Cuidado Premium",
-  //   subtitle: "Polimento, cristalização e higienização para o seu veículo brilhar.",
-  //   bgImage: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=2070",
-  // }
+  {
+    id: 3,
+    title: "Estética",
+    subtitle: "Cuidado premium pro seu carro voltar a brilhar!",
+    bgImage: "/hero/Slide1.webp",
+  }
 ];
 
 export default function HeroRotativo() {
