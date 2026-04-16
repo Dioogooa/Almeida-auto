@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { MapPin, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Clock, MessageCircle, ArrowUp } from "lucide-react";
 
 export default function Localizacao() {
   return (
@@ -50,15 +52,24 @@ export default function Localizacao() {
           </div>
         </div>
 
-        <div className="mt-16 flex justify-center">
+
+
+        <div className="mt-16 flex flex-col sm:flex-row justify-center items-center gap-4">
           <a
             href="https://wa.me/5562982302156?text=Ol%C3%A1%2C%20quero%20fazer%20um%20orcamento%20sem%20compromisso"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 active:scale-95"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 active:scale-95 text-lg"
           >
             Fazer Orçamento <MessageCircle className="w-5 h-5" />
           </a>
+
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 active:scale-95 text-lg"
+          >
+            Voltar ao Início <ArrowUp className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </section>
