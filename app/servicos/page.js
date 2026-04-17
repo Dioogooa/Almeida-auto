@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, MonitorPlay, Wrench, Sparkles } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const metadata = {
   title: "Nossos Serviços | Almeida Auto",
@@ -57,6 +58,8 @@ export default function ServicosPage() {
     <div className="min-h-screen bg-gray-50/50 pt-28 pb-12 md:pt-32 md:pb-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
+
+
         {/* Header da Página de Serviços */}
         <div className="flex flex-col items-center justify-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -149,15 +152,24 @@ export default function ServicosPage() {
 
         </div>
 
-        {/* Back Button */}
-        <div className="mt-20 mb-8 flex justify-center">
+        {/* Bottom Buttons */}
+        <div className="mt-20 mb-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link 
             href="/" 
-            className="inline-flex items-center justify-center bg-secondary hover:bg-secondary/90 text-white text-sm font-semibold py-3 px-6 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center bg-secondary hover:bg-secondary/90 text-white text-sm font-semibold py-3 px-8 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 w-full sm:w-auto"
           >
             <ArrowLeft className="mr-2 w-4 h-4" />
-            Voltar para a página inicial
+            Voltar para a inicial
           </Link>
+          <a
+            href="https://wa.me/5562982302156"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white text-sm font-semibold py-3 px-8 rounded-full transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 w-full sm:w-auto"
+          >
+            <FaWhatsapp className="w-5 h-5" />
+            Fazer Orçamento
+          </a>
         </div>
 
       </div>
