@@ -54,7 +54,7 @@ const estetica = [
 
 export default function ServicosPage() {
   return (
-    <div className="min-h-screen bg-gray-50/50 py-12 md:py-16">
+    <div className="min-h-screen bg-gray-50/50 pt-28 pb-12 md:pt-32 md:pb-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header da Página de Serviços */}
@@ -71,7 +71,7 @@ export default function ServicosPage() {
         <div className="space-y-16 md:space-y-20">
           
           {/* Seção Multimídias */}
-          <section className="scroll-mt-24">
+          <section id="multimidia" className="scroll-mt-32">
             <div className="flex items-center gap-3 mb-8 border-b border-border pb-3">
               <div className="text-primary">
                 <MonitorPlay size={24} strokeWidth={2} />
@@ -102,7 +102,7 @@ export default function ServicosPage() {
           </section>
 
           {/* Seção Acessórios */}
-          <section className="scroll-mt-24">
+          <section id="acessorios" className="scroll-mt-32">
             <div className="flex items-center gap-3 mb-8 border-b border-border pb-3">
               <div className="text-primary">
                 <Wrench size={24} strokeWidth={2} />
@@ -125,7 +125,7 @@ export default function ServicosPage() {
           </section>
 
           {/* Seção Estética Automotiva */}
-          <section className="scroll-mt-24">
+          <section id="estetica" className="scroll-mt-32">
             <div className="flex items-center gap-3 mb-8 border-b border-border pb-3">
               <div className="text-primary">
                 <Sparkles size={24} strokeWidth={2} />

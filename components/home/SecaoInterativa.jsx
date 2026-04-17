@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const servicos = [
   {
     id: "multimidia",
-    titulo: "Multimídia Automotiva",
+    titulo: "Multimídias Almeida",
     descricao: "Instalação de centrais multimídia de última geração, integração com Apple CarPlay e Android Auto, câmeras de ré e sistemas de som premium.",
     imagem: "/servicos/multimidia.jpg",
     video: "/servicos/multimidia.mp4",
@@ -48,32 +48,32 @@ export default function SecaoInterativa() {
           {/* Coluna Esquerda: Lista de Serviços */}
           <div className="flex flex-col gap-4">
             {servicos.map((servico) => (
-              <button
+              <div
                 key={servico.id}
                 onClick={() => setAtivo(servico)}
-                className={`text-left p-6 rounded-2xl border transition-all duration-300 ${ativo.id === servico.id
+                className={`text-left p-6 rounded-2xl border transition-all duration-300 cursor-pointer ${ativo.id === servico.id
                   ? "border-primary bg-primary/5 shadow-md"
                   : "border-gray-200 bg-white hover:border-primary/30"
                   }`}
               >
-                <h3 className={`text-xl md:text-2xl font-bold mb-2 ${ativo.id === servico.id ? "text-primary" : "text-gray-800"}`}>
+                <h3 className={`text-xl md:text-2xl font-bold ${ativo.id === servico.id ? "text-primary mb-2" : "text-gray-800"}`}>
                   {servico.titulo}
                 </h3>
-                <p className="text-gray-600 text-sm md:text-base mb-4 line-clamp-3">
-                  {servico.descricao}
-                </p>
-                <div
-                  className={`inline-flex items-center gap-1 font-semibold transition-colors ${ativo.id === servico.id ? "text-primary" : "text-gray-400"
+                <Link
+                  href={`/servicos#${servico.id}`}
+                  onClick={(e) => e.stopPropagation()}
+                  className={`inline-flex items-center gap-1 font-semibold transition-colors mt-2 ${ativo.id === servico.id ? "text-primary" : "text-gray-400"
                     }`}
                 >
                   Saber mais <ChevronRight size={18} />
-                </div>
-              </button>
+                </Link>
+              </div>
             ))}
-            <div className="mt-4">
+            <div className="mt-4 hidden lg:block">
               <Link
                 href="/servicos"
                 className="inline-block bg-secondary text-white font-semibold py-4 px-8 rounded-full hover:bg-gray-800 transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Ver todos os detalhes
               </Link>
@@ -112,6 +112,16 @@ export default function SecaoInterativa() {
               </motion.div>
             </AnimatePresence>
           </div>
+        </div>
+        {/* Mobile Button: Abaixo do vídeo */}
+        <div className="mt-8 flex justify-center lg:hidden">
+          <Link
+            href="/servicos"
+            className="inline-block bg-secondary text-white font-semibold py-4 px-8 rounded-full hover:bg-gray-800 transition-colors"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            Ver todos os detalhes
+          </Link>
         </div>
       </div>
     </section>
