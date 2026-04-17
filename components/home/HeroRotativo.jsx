@@ -8,19 +8,19 @@ const slides = [
   {
     id: 1,
     title: "Multímidia",
-    subtitle: "Transforme a interna do seu carro!",
+    subtitle: "Transforme a sua experiência ao dirigir",
     bgImage: "/hero/Slide1.webp",
   },
   {
     id: 2,
     title: "Acessórios",
-    subtitle: "O detalhe que faltava no seu carro!",
+    subtitle: "O detalhe que faz toda a diferença",
     bgImage: "/hero/Slide1.webp",
   },
   {
     id: 3,
     title: "Estética",
-    subtitle: "Cuidado premium pro seu carro voltar a brilhar!",
+    subtitle: "Cuidado premium pro seu carro ficar brilhando",
     bgImage: "/hero/Slide1.webp",
   }
 ];

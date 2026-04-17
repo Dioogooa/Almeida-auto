@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="col-span-1 md:col-span-2">
           <Link href="/" className="flex items-center gap-2 mb-6">
             <Image
-              src="/Logo1.png"
+              src="/logo1.png"
               alt="Almeida Auto"
               width={160}
               height={32}

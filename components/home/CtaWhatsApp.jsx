@@ -10,7 +10,7 @@ export default function CtaWhatsApp() {
           Pronto para transformar seu carro?
         </h2>
         <p className="text-base md:text-lg text-white/90 mb-8 md:mb-10 max-w-2xl mx-auto">
-          Faça um orçamento sem compromisso e descubra as melhores opções de mídia e estética para o seu veículo.
+          Faça um orçamento sem compromisso e descubra as melhores condições de multimídia, acessórios e estética para o seu veículo.
         </p>
         <a
           href="https://wa.me/5562982302156"
