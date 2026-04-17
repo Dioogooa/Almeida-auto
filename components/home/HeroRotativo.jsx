@@ -65,7 +65,7 @@ export default function HeroRotativo() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight"
             >
               {slides[currentSlide].title}
             </motion.h1>
@@ -78,7 +78,7 @@ export default function HeroRotativo() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -20, opacity: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-lg md:text-xl text-gray-200 mb-8"
+              className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 md:mb-8"
             >
               {slides[currentSlide].subtitle}
             </motion.p>

@@ -7,9 +7,9 @@ export default function Localizacao() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Venha nos conhecer</h2>
-          <p className="text-gray-600">Nossa loja está de portas abertas para receber seu veículo.</p>
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Venha nos conhecer</h2>
+          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">Nossa loja está de portas abertas para receber seu veículo.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

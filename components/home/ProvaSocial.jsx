@@ -43,10 +43,10 @@ export default function ProvaSocial() {
         </div>
 
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
             Sejam bem-vindos à Almeida Auto
-          </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          </h2>
+          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
             Transformando a experiência do seu veículo com a melhor tecnologia em multimídia e acessórios automotivos.
           </p>
         </div>
@@ -56,10 +56,10 @@ export default function ProvaSocial() {
               key={i}
               className="bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
             >
-              <h3 className="text-4xl md:text-5xl font-bold text-primary mb-2">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">
                 {stat.title}
               </h3>
-              <p className="text-gray-600 font-medium text-lg uppercase tracking-wide">
+              <p className="text-gray-600 font-medium text-sm md:text-base uppercase tracking-wide">
                 {stat.description}
               </p>
             </div>

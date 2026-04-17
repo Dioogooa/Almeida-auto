@@ -36,9 +36,9 @@ export default function SecaoInterativa() {
   return (
     <section className="py-24 bg-white" id="servicos">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos Serviços</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Nossos Serviços</h2>
+          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
             Oferecemos uma linha completa de soluções para modernizar, proteger e cuidar
             do seu veículo com a máxima qualidade.
           </p>
@@ -56,10 +56,10 @@ export default function SecaoInterativa() {
                   : "border-gray-200 bg-white hover:border-primary/30"
                   }`}
               >
-                <h3 className={`text-2xl font-bold mb-2 ${ativo.id === servico.id ? "text-primary" : "text-gray-800"}`}>
+                <h3 className={`text-xl md:text-2xl font-bold mb-2 ${ativo.id === servico.id ? "text-primary" : "text-gray-800"}`}>
                   {servico.titulo}
                 </h3>
-                <p className="text-gray-600 mb-4 line-clamp-3">
+                <p className="text-gray-600 text-sm md:text-base mb-4 line-clamp-3">
                   {servico.descricao}
                 </p>
                 <div
